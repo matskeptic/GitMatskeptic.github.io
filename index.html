@@ -1,0 +1,67 @@
+<!--Projeto de conversor de moedas/api-->
+<!--Html lang ajuda identificar qual idioma deverá aparecer como resultado da pesquisa deste website ou similares-->
+<html lang="pt-br">
+<!--Aqui decidimos <title></title> o título de nosso conversor-->
+<head>
+<title>Conversor de Moedas</title>
+<!--Esta tag ajuda a identificar pro sistema como a informação será armazenada, em binários,etc-->
+<meta charset="UTF-8"/>
+<!--meta name="viewport" ajuda a maximizar o website para mobile sem mudanças significativas no UX/layout-->
+<meta name="viewport" content="width=device-width , initial-scale=1.0"/>
+<!--link rel ajuda a ligar uma página de suporte ou "resource" a uma página central/documento, no caso index.html-->
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+
+<!--tudo dentro do div wrapper pode ser modificado de uma só vez-->
+    <div class="wrapper">
+        <header>Conversor de Moedas</header>
+        <form action="#">
+            <div class="Valor">
+                <p>Inserir valor</p>
+                <input type="text" value="1">
+            </div>
+            
+            <div class="alura-logo">
+                <a href="https://alura.com.br/" target="_blank">
+                    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+                    </a>
+            </div>
+
+            <div class="drop-list">
+                <div class="from">
+                    <p>de</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/h20/br.png" alt="flags">
+                        <select>
+                            <option value="BRL">BRL</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CNY">CNY</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>para</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/h20/us.png" alt="flags">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+        <div class="exchange-rate">calculando câmbio...</div>
+        <button>taxa de câmbio</button>
+        </form>
+        
+    </div>
+
+    <script src="/country-list.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+</html>
