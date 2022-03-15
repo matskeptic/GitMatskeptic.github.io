@@ -13,7 +13,8 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #ff6347;
+    background-image: url('https://cdn.dribbble.com/users/205519/screenshots/1625341/coin.gif');
+    
 }
 
 .alura-logo {
@@ -61,7 +62,7 @@ form input{
 
 form input:focus{
     padding: 0 14px;
-    border: 2px solid #ff6347;
+    border: 2px solid #d9ab4b;
 }
 
 form .drop-list{
@@ -123,7 +124,7 @@ form button{
     color: #fff;
     font-size: 17px;
     cursor: pointer;
-    background-color: #ff6347;
+    background-color: #d9ab4b;
     border-radius: 5px;
 }
 
